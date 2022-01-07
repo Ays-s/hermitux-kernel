@@ -212,6 +212,7 @@ int sys_dup2(int oldfd, int newfd);
 int sys_pipe(int *filedes);
 int sys_newfstatat(int dirfd, const char *name, struct stat *buf, int flag);
 int sys_poll(struct pollfd *ufds, unsigned int nfds, int timeout_msecs);
+int sys_rename(const char *oldpath, const char *newpath);
 
 struct ucontext;
 typedef struct ucontext ucontext_t;
